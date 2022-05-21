@@ -19,10 +19,12 @@ header>div {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    border-bottom: 1px solid #ECECEC;
+    
 
 }
-
+.header-studio {
+border-bottom: 1px solid #ECECEC;
+}
 main {
     font-family: Roboto;
 }
@@ -78,7 +80,7 @@ p.logo-portfolio {
 }
 
 p.logodown {
-    margin: 0px, 0px, 20px, 0px;
+    margin-bottom: 20px;
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -175,7 +177,8 @@ header>div {
 }
 
 .hero-section {
-    padding: 200px 280px;
+    padding-top: 200px;
+    padding-bottom: 280px;
 
     background-color: var(--footer-header-background);
 }
@@ -253,7 +256,11 @@ header>div {
     margin-bottom: 0;
     justify-content: space-between;
 }
+.advantage li:not(:last-child) {
 
+    margin-right: 30px;
+        max-width: 270px;
+}
 /* Чем мы занимаемся  */
 .section-wedo {
     padding-top: 94px;
@@ -333,7 +340,7 @@ header>div {
 }
 
 .team h3 {
-    padding-top: 30px;
+    
     margin-bottom: 10px;
     margin-top: 0px;
     color: var(--h2-text-color);
@@ -347,7 +354,7 @@ header>div {
 
 .team p {
     box-sizing: border-box;
-    padding-bottom: 30px;
+    
     margin-top: 0px;
     margin-bottom: 0px;
     color: var(--p-text-color);
@@ -358,7 +365,9 @@ header>div {
     text-align: center;
     letter-spacing: 0.03em;
 }
-
+.team-workers {
+    padding: 30px 0;
+}
 /*Подвал*/
 footer {
     padding-top: 60px;
@@ -469,6 +478,18 @@ p.img-p {
 /* PORTFOLIO - PAGE Styles*/
 /* PORTFOLIO - PAGE Styles*/
 /* PORTFOLIO - PAGE Styles*/
+.port-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.header-portfolio{
+    border-bottom: 1px solid #ececec;
+}
+.portfolio-border {
+    
+    border-top: transparent;
+    padding: 20px 24px;
+}
 .no-display {
     display: none;
 }
@@ -481,7 +502,7 @@ p.img-p {
 .search-menu {
     display: flex;
     justify-content: center;
-    margin-top: 87px;
+    
     margin-bottom: 50px;
 }
 
@@ -510,7 +531,7 @@ p.img-p {
 .portfolio-projects>li {
     box-sizing: border-box;
     max-width: 370px;
-    max-height: 404px;
+    
     margin-top: 0px;
     margin-bottom: 0px;
     border-style: solid;
