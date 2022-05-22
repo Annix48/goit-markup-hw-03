@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;}
 
 :root {
     --Logo-blue-color: #2196f3;
@@ -47,7 +54,6 @@ h2 {
     margin-top: 0;
     margin-bottom: 0;
     color: var(--h2-text-color);
-    font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
@@ -60,13 +66,19 @@ nav>a {
     margin-right: 93px;
 }
 
-p.logo {
+.logo {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+        
+
     font-family: Raleway;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    text-decoration: none;
 
 }
 
@@ -75,19 +87,11 @@ p.logo-portfolio {
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
-p.logodown {
-    margin-bottom: 20px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-}
+
 
 span.logo-blue {
     color: var(--Logo-blue-color);
@@ -107,6 +111,12 @@ nav {
 }
 
 /*Общие параметры для макета*/
+.cont-header {
+    display: flex;
+    align-items: center;
+        margin-left: auto;
+        justify-content: flex-end;
+}
 .container {
     display: flex;
     width: 1200px;
@@ -138,10 +148,11 @@ header>div {
 }
 
 /*Почта и тел в хедере*/
+
 .ul-contacts {
     display: flex;
-    align-items: center;
-    margin-left: auto;
+    
+    
 }
 
 .ul-contacts li:not(:last-child) {
@@ -149,6 +160,7 @@ header>div {
 }
 
 .list-contacts>a {
+    
     color: var(--p-text-color);
 }
 
@@ -159,6 +171,8 @@ header>div {
 
 /* nav-block  стили для блока ссылок в хедере */
 .nav-block {
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     padding-left: 0;
 }
@@ -173,23 +187,24 @@ header>div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Roboto;
+    
 }
 
 .hero-section {
     padding-top: 200px;
-    padding-bottom: 280px;
-
+    padding-bottom: 200px;
+    text-align: center;
     background-color: var(--footer-header-background);
 }
 
 .hero>h1 {
     color: var(--Logo-white-color);
-    font-family: Roboto;
-    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+    max-width: 696px;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -197,34 +212,30 @@ header>div {
 
 .hero-button {
     box-sizing: content-box;
-    width: 200px;
-    height: 50px;
-    margin: 30px;
-    border: var(--Logo-blue-color);
-    border-radius: 4px;
+    padding: 10px 32px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
     background-color: var(--Logo-blue-color);
     color: var(--Logo-white-color);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .hero-button:hover,
 .hero-button:hover {
     background-color: var(--Logo-white-color);
     color: var(--Logo-blue-color);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.06em;
+    
+    
 }
 
 /*Оформление преимущества*/
 .advantage {
+
     padding-top: 94px;
 }
 
@@ -253,6 +264,7 @@ header>div {
 
 .advantage ul {
     display: flex;
+    margin-top: 0;
     margin-bottom: 0;
     justify-content: space-between;
 }
@@ -314,7 +326,7 @@ header>div {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -333,6 +345,8 @@ header>div {
     max-height: 368px;
     background-color: var(--Logo-white-color);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team li:not(:last-child) {
@@ -347,7 +361,7 @@ header>div {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -358,10 +372,9 @@ header>div {
     margin-top: 0px;
     margin-bottom: 0px;
     color: var(--p-text-color);
-    font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -373,19 +386,29 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-header-background);
+    
 }
 
+.adr li {
+    display: block;
+}
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
 address {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
+    
 }
 
 .down-page {
+    
     flex-direction: column;
     align-items: flex-start;
+    
 }
 
 footer>a>p {
@@ -394,9 +417,9 @@ footer>a>p {
 
 .adr span {
     font-family: Roboto;
-    margin-bottom: 9px;
+    
     color: var(--Logo-white-color);
-    font-weight: normal;
+    
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
@@ -411,7 +434,7 @@ footer>a>p {
 .adr a {
     font-family: Roboto;
     color: rgba(255, 255, 255, 0.6);
-    font-weight: normal;
+    
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
@@ -432,10 +455,10 @@ button.filter {
     padding: 6px 22px 6px 22px;
     color: var(--h2-text-color);
     background-color: var(--our-team-background);
-    font-style: normal;
+    border-color: transparent;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     border-radius: 4px;
@@ -446,13 +469,13 @@ button.filter:hover,
 button.active:focus {
     color: var(--Logo-white-color);
     background-color: var(--Logo-blue-color);
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     border-color: var(--Logo-white-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 
 }
@@ -462,7 +485,7 @@ h2.img-head {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
 }
 
@@ -471,7 +494,7 @@ p.img-p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.03em;
 }
 
@@ -502,7 +525,7 @@ p.img-p {
 .search-menu {
     display: flex;
     justify-content: center;
-    
+    margin-top: 0;
     margin-bottom: 50px;
 }
 
@@ -510,10 +533,7 @@ p.img-p {
     margin-right: 8px;
 }
 
-.portfolio-section {
-    margin-top: 0px;
-    margin-bottom: 101px;
-}
+
 
 .portfolio-content {
     flex-direction: column;

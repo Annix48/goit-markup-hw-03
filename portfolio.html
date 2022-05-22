@@ -12,7 +12,7 @@
                 <link
                     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
                     rel="stylesheet">
-                <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
                 <link rel="stylesheet" href="./css/styles.css" />
             </head>
             
@@ -22,21 +22,20 @@
                     <div class="container">
                         <nav>
                             <!--Logo links in the header-->
-                            <a href="./index.html">
-                                <p class="logo-portfolio">
-                                    <span class="logo-blue">Web</span><span class="logo-black">Studio</span>
-                                </p>
+                            <a href="./index.html" class="logo">
+                    
+                                <span class="logo-blue">Web</span><span class="logo-black">Studio</span>
+                    
                             </a>
                             <!--Navigation list links in header-->
                             <ul class="nav-block">
-                                <li class="list"><a href="./index.html">Студия</a></li>
-                                <li class="list">
-                                    <a class="active-link" href="./portfolio.html">Портфолио</a>
-                                </li>
+                                <li class="list"><a class="active-link" href="./index.html">Студия</a></li>
+                                <li class="list"><a href="./portfolio.html">Портфолио</a></li>
                                 <li class="list"><a href="">Контакты</a></li>
                             </ul>
                         </nav>
                         <!--Contacts links list in the header-->
+                        <div class="cont-header">
                         <ul class="ul-contacts">
                             <li class="list-contacts">
                                 <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
@@ -45,6 +44,7 @@
                                 <a href="tel:+380961111111"> +38 096 111 11 11 </a>
                             </li>
                         </ul>
+                        </div>
                     </div>
                 </header>
             
@@ -62,7 +62,7 @@
                             <li><button class="filter">Маркетинг</button></li>
                         </ul>
                     </div>
-                    <section class="portfolio-section">
+                    
                         <div class="container">
                             <!--Content-projects-section-->
                             <ul class="portfolio-projects">
@@ -133,22 +133,24 @@
                                 </li>
                             </ul>
                         </div>
-                    </section>
+                    
                     </section>
                 </main>
                 <footer>
                     <!--Logo links in the header-->
                     <div class="container down-page">
-                        <a href="./portfolio.html">
-                            <p class="logodown">
-                                <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
-                            </p>
+                        <a href="./index.html" class="logo">
+                        
+                            <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
+                        
                         </a>
                         <address class="adr">
-                            <span>г. Киев, Бульвар Леси Украинки, 26</span> <br />
-                            <a href="mailto:info@example.com"> info@example.com </a>
-                            <br />
-                            <a href="tel:+380991111111"> +38 099 111 11 11 </a>
+                            <ul>
+                                <li class="footer-item"><span>г. Киев, Бульвар Леси Украинки, 26</span></li>
+                                <li class="footer-item"><a href="mailto:info@example.com"> info@example.com </a></li>
+                        
+                                <li class="footer-item"><a href="tel:+380991111111"> +38 099 111 11 11 </a></li>
+                            </ul>
                         </address>
                     </div>
                 </footer>
